@@ -7,6 +7,8 @@ I decided to make this as Luca added support for iPhone 6 (7,2) on the project, 
 * iOS Version Detection
 * IPA Support
 
+* This is a Beta Jailbreak, use at your own risk!
+
 Feel free to play with project as you want. Luca Todesco licensed it under WTFPL (Do What The Fuck You Want To Public License)
 This is not the original Yalu iOS 10.2 Project.
 Check out the original project: https://github.com/kpwn/yalu102 for updates.
