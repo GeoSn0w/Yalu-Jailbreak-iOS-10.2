@@ -13,3 +13,7 @@ Feel free to play with project as you want. Luca Todesco licensed it under WTFPL
 This is not the original Yalu iOS 10.2 Project.
 Check out the original project: https://github.com/kpwn/yalu102 for updates.
 
+My Twotter: https://twitter.com/FCE365
+
+AVOID @iFenixx!
+
