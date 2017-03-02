@@ -4,6 +4,7 @@ My own fork of Yalu Jailbreak for iOS 10.0 to 10.2 by qwertyoruiopz with support
 I decided to make this as Luca added support for iPhone 6 (7,2) on the project, but not on the compiled IPA, so while I was at it, I also decided to play a bit with the project and I added:
 
 * Dark User Interface
+* Shows how many days out of the 7 Apple gives you have passed, brings a warning to resign it on day 6.
 * iOS Version Detection
 * IPA Support (Reflects Yalu Beta 7)
 * This is a Beta Jailbreak, use at your own risk!
