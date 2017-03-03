@@ -29,17 +29,21 @@
     @end
     
     @implementation ViewController
-    
     - (void)viewDidLoad {
-        
         [super viewDidLoad];
-        //Beginning of GeoSn0w's Code [Let the game begin.]
+        //******************************************* Beginning of GeoSn0w's Code [Let the game begin.] ******************************************************
         if([[NSUserDefaults standardUserDefaults] objectForKey:@"IDate"])
         {
             NSDate *watchCAT = [[NSUserDefaults standardUserDefaults] objectForKey:@"IDate"];
-            NSTimeInterval time = [[NSDate date] timeIntervalSinceDate:watchCAT];
+            NSTimeInterval time = [[NSDate date] timeIntervalSinceDate:watchCAT]; //CatFish
             int hellnopleasenonocertificationpleasee=time/86400;
+            self.certificationCat.text = [NSString stringWithFormat:@"%d Days Out Of 7",hellnopleasenonocertificationpleasee+1]; //Hell no
+            if ([_certificationCat.text isEqualToString:@"1 Days Out Of 7"]){
+                self.certificationCat.text = @"1 Day Out Of 7"; //For proper English, press one.
+            }
+            else{ //ELSE!
             self.certificationCat.text = [NSString stringWithFormat:@"%d Days Out Of 7",hellnopleasenonocertificationpleasee+1]; //Hell yeah
+            }
             if ([_certificationCat.text isEqualToString:@"6 Days Out Of 7"]){
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"I don't like to be the one who breaks the bad news but..."
                                                                 message:@"Your Yalu's certificate will expire in less than 24 hours, which means you won't be able to open the app anymore and Jailbreak if you reboot. I recommend using Cydia Impactor to resign Yalu Dark. If you have no idea how to do that, contact me on Twitter: @FCE365"
@@ -47,25 +51,27 @@
                                                       cancelButtonTitle:@"Umm, okay."
                                                       otherButtonTitles:nil];
                 [alert show];
-                
-                //Bad way of doing this, but didn't have too much time. Gonna improve it someday.
             }
+            
+            //Not the best way of doing this, but didn't have too much time. Gonna improve it SON. Works flawlessly tho.
             //At first we check to see if the App's Installation date was registered, if not, we do it but it might not be accurate. (I have to improve this).
             //Then we check the time, we count up how many days the app has been installed
             //we transform seconds in days because yes.
             //We tell the certification Cat label to show the days passed out of 7.
             //We buzz the user to resign son.
             //GeoSn0w's Code. Not part of the official Yalu, don't buzz Todesco with questions about this segment of code.
+            //Awaiting Todesco to say the code is not safe. LMAO
         }
         else
         {
             [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"IDate"];
-            [[NSUserDefaults standardUserDefaults] synchronize];
-            //We register and sincronize the date.
+            [[NSUserDefaults standardUserDefaults] synchronize]; //I swear this code is a joke. Or is it?
+            
+            //We register and synchronize the date.
         }
-        NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
-        self.iOSVer.text = currSysVer;
-        //End of GeoSn0w's code.
+        NSString *currSysVer = [[UIDevice currentDevice] systemVersion]; //Retrieving iOS Version, get it?
+        self.iOSVer.text = currSysVer; //"I don't know what to do actually" -L.T.
+        //********************************************************  *****  End of GeoSn0w's code. ***** *****************************************************
         init_offsets();
         struct utsname u = { 0 };
         uname(&u);
@@ -149,6 +155,9 @@
     char dt[128];
     - (IBAction)yolo:(UIButton*)sender
     {
+        //Beginning GeoSn0w's code
+        [sender setTitle:@"Sploiting..." forState:UIControlStateNormal]; //Shit, not enough time in-between the crash and the UI changes...
+        //End of GeoSn0w's Code
         /*
          
          we out here!
