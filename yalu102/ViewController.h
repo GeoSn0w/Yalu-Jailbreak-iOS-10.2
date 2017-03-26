@@ -13,7 +13,16 @@
     IBOutlet UIButton* dope;
 }
 - (IBAction)yolo:(id)sender;
+@property (retain, nonatomic) IBOutlet UISwitch *ssh;
+@property (retain, nonatomic) IBOutlet UIButton *fixcydia;
 @property (retain, nonatomic) IBOutlet UILabel *iOSVer;
+@property (retain, nonatomic) IBOutlet UILabel *certiftime;
+@property (retain, nonatomic) IBOutlet UIButton *fixespop;
+@end
 
+@interface fixes : UIViewController
+{
+    
+}
 @end
 

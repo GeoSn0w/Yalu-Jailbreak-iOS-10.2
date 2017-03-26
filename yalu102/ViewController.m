@@ -13,6 +13,14 @@
 #import <pthread.h>
 #undef __IPHONE_OS_VERSION_MIN_REQUIRED
 #import <mach/mach.h>
+#import "devicesupport.h"
+#import <sys/mount.h>
+#import <spawn.h>
+#import <copyfile.h>
+#import <mach-o/dyld.h>
+#import <sys/types.h>
+#import <sys/stat.h>
+#import <sys/utsname.h>
 #include <sys/utsname.h>
     
     extern uint64_t procoff;
@@ -27,51 +35,63 @@
     @interface ViewController ()
 
     @end
-    
+
     @implementation ViewController
+    //Starting Geosn0w's code... (Code is segmented on GeoSn0w / Todesco so that you know who to ask for support for each part of the code.)
+    /*
+    *******************************************************************************************************************************************
+    */
+    - (UIStatusBarStyle)preferredStatusBarStyle {
+    
+        return UIStatusBarStyleLightContent; //Pitch black ain't my favorite.
+    }
     - (void)viewDidLoad {
         [super viewDidLoad];
-        //******************************************* Beginning of GeoSn0w's Code [Let the game begin.] ******************************************************
         if([[NSUserDefaults standardUserDefaults] objectForKey:@"IDate"])
         {
             NSDate *watchCAT = [[NSUserDefaults standardUserDefaults] objectForKey:@"IDate"];
             NSTimeInterval time = [[NSDate date] timeIntervalSinceDate:watchCAT]; //CatFish
-            int hellnopleasenonocertificationpleasee=time/86400;
-            self.certificationCat.text = [NSString stringWithFormat:@"%d Days Out Of 7",hellnopleasenonocertificationpleasee+1]; //Hell no
-            if ([_certificationCat.text isEqualToString:@"1 Days Out Of 7"]){
-                self.certificationCat.text = @"1 Day Out Of 7"; //For proper English, press one.
+            int hellnopleasenonocertificationpleasee = time/86400;
+            self.certiftime.text = [NSString stringWithFormat:@"%d Days Since Installation",hellnopleasenonocertificationpleasee+1]; //Hell no
+            if ([_certiftime.text isEqualToString:@"1 Days Since Installation"]){
+                self.certiftime.text = @"1 Day Since Installation";
             }
-            else{ //ELSE!
-            self.certificationCat.text = [NSString stringWithFormat:@"%d Days Out Of 7",hellnopleasenonocertificationpleasee+1]; //Hell yeah
-            }
-            if ([_certificationCat.text isEqualToString:@"6 Days Out Of 7"]){
-                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"I don't like to be the one who breaks the bad news but..."
-                                                                message:@"Your Yalu's certificate will expire in less than 24 hours, which means you won't be able to open the app anymore and Jailbreak if you reboot. I recommend using Cydia Impactor to resign Yalu Dark. If you have no idea how to do that, contact me on Twitter: @FCE365"
-                                                               delegate:self
-                                                      cancelButtonTitle:@"Umm, okay."
-                                                      otherButtonTitles:nil];
-                [alert show];
+            else{
+            self.certiftime.text = [NSString stringWithFormat:@"%d Days Since Installation",hellnopleasenonocertificationpleasee+1]; //Hell yeah
             }
             
-            //Not the best way of doing this, but didn't have too much time. Gonna improve it SON. Works flawlessly tho.
-            //At first we check to see if the App's Installation date was registered, if not, we do it but it might not be accurate. (I have to improve this).
-            //Then we check the time, we count up how many days the app has been installed
-            //we transform seconds in days because yes.
-            //We tell the certification Cat label to show the days passed out of 7.
-            //We buzz the user to resign son.
-            //GeoSn0w's Code. Not part of the official Yalu, don't buzz Todesco with questions about this segment of code.
-            //Awaiting Todesco to say the code is not safe. LMAO
         }
         else
         {
             [[NSUserDefaults standardUserDefaults] setObject:[NSDate date] forKey:@"IDate"];
-            [[NSUserDefaults standardUserDefaults] synchronize]; //I swear this code is a joke. Or is it?
+            [[NSUserDefaults standardUserDefaults] synchronize];
             
-            //We register and synchronize the date.
         }
-        NSString *currSysVer = [[UIDevice currentDevice] systemVersion]; //Retrieving iOS Version, get it?
-        self.iOSVer.text = currSysVer; //"I don't know what to do actually" -L.T.
-        //********************************************************  *****  End of GeoSn0w's code. ***** *****************************************************
+        
+        NSArray* alphaArray = [NSArray arrayWithObjects: @"6 Days Since Installation", @"12 Days Since InstallationB", @"18 Days Since Installation", @"24 Days Since Installation", @"30 Days Since Installation", @"36 Days Since Installation", @"42 Days Since Installation", @"48 Days Since Installation", @"54 Days Since Installation", @"60 Days Since Installation", @"66 Days Since Installation", @"72 Days Since Installation", @"78 Days Since Installation", @"84 Days Since Installation", @"90 Days Since Installation", @"96 Days Since Installation", @"102 Days Since Installation", @"108 Days Since Installation", @"114 Days Since Installation", @"120 Days Since Installation", @"126 Days Since Installation", @"132 Days Since Installation", @"138 Days Since Installation", @"144 Days Since Installation", @"150 Days Since Installation", @"156 Days Since Installation", @"162 Days Since Installation", @"168 Days Since Installation", @"174 Days Since Installation", @"180 Days Since Installation",nil];
+        BOOL found = NO;
+        for ( NSString* stringFromArray in alphaArray ) {
+            if ([self.certiftime.text isEqualToString:stringFromArray]) {
+                found = YES;
+                break;
+            }
+        }
+        if ( found ) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"I don't like to be the one who breaks the bad news but..."
+                                                            message:@"Your Yalu's certificate will expire in less than 24 hours, which means you won't be able to open the app anymore and Jailbreak if you reboot. I recommend using Cydia Impactor to resign Yalu Dark. If you have no idea how to do that, contact me on Twitter: @FCE365"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Umm, okay."
+                                                  otherButtonTitles:nil];
+            [alert show];
+            
+        }
+       
+        NSString *currSysVer = [[UIDevice currentDevice] systemVersion];
+        self.iOSVer.text = currSysVer;
+        //Leaving Geosn0w's code...
+        /*
+         *******************************************************************************************************************************************
+        */
         init_offsets();
         struct utsname u = { 0 };
         uname(&u);
@@ -87,83 +107,81 @@
         not_natural_t io_bits;
         not_natural_t io_references;
         char    io_lock_data[1337];
-        /*
-         
-         https://www.youtube.com/watch?v=ZADJ8S1qH3U
-         
-         
-         [Intro]
-         Lets get it
-         Steve Drive
-         R.I.P L'A Capone
-         OTF
-         These nigga's steady woofing like they want beef, want beef?
-         You want smoke? You want smoke? Just tell me
-         
-         [Hook]
-         These niggas steady woofing like they want beef, want beef?[You want smoke?]
-         I can make that happen if you want beef, you want beef?[You want smoke?]
-         Catch you while you're capping with this semi, semi
-         Put the semi-automatic to your kidney, kidney
-         
-         [Verse 1]
-         Put the semi-automatic to your kidney, kidney
-         I'm off the dope I got the pole you talking tough you getting smoked
-         These nigga's steady woofing like they want beef, but I really know
-         Glock or nickel yeah that bitch go, I'm going like I'm at a fucking show
-         I'm off Tu pack saying fuck Jojo[Fuck Jojo]
-         Talking shit get your life took no joke
-         I'm with my nigga's and my niggas ain't no joke
-         And if you got that fucking bag then you getting poked
-         And if you acting tough, I'ma fucking blow, and that's on Pluto[On Pluto]
-         Me and Durk finna spaz, and I put that on the guys, it's homicides
-         Cause we dropping Y's[Die Y, Die Y], head shot got him traumatized
-         And you want beef?[You want beef fu nigga?] but when I see you, you don't speak?[You don't even talk]
-         I got my 9 on me[Rondo] and I'ma blow and that's on me[I'm Rondo]
-         I'm getting tree tree[Getting dope], getting top from a bitch named Kiki
-         
-         [Chorus]
-         
-         [Verse 2]
-         And if you really want smoke[You want smoke little nigga?]
-         I will give your ass smoke[Give your ass smoke little nigga?]
-         This Glock 9 bitch I tote, and I will put it to your throat
-         I'm off this Tooka pack and no L'A, I'ma go crazy
-         You supposed to be my nigga but actin' like a fan that’s crazy
-         What the fuck wrong with these nigga's, they fugazi
-         I made this song for the niggas, cause they crazy
-         Separate me from them niggas[Separate Rondo]
-         Pull up on your block, with the mops
-         Then I hit the dip and put him up in case of attempts[Incase a nigga survive]
-         But we don't make throws, we shoot like Pimp[We shoot to kill]
-         I got 23[Two three] So i don't fucking speak[I don't speak]
-         Riding fast, I hit the dash, ain't gon last[You ain't gonna last nigga], I'ma blast[Cause ima blast on a nigga]
-         Numba Nine, bitch [I'm #9 lil nigga], and I'm a sav, bitch
-         
-         [Chorus]
-         */
-        
     };
     
-    
-    
+
 #define IO_BITS_ACTIVE 0x80000000
 #define	IKOT_TASK 2
 #define IKOT_IOKIT_CONNECT 29
 #define IKOT_CLOCK 25
     
     char dt[128];
+/*
+    - (IBAction)fixcydia:(UIButton*)sender
+    {
+        if(isJailbroken() == YES){
+        NSString* thefile = @"/.installed_yaluX";
+        BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:thefile];
+        if(fileExists == YES){
+        [[NSFileManager defaultManager] setAttributes:@{ NSFilePosixPermissions : @0775 }
+                                         ofItemAtPath:@"/.installed_yaluX"
+                                                error:nil];
+            system("echo alpine | sudo -S rm -rf /.installed_yaluX");
+            
+            if(fileExists == YES){
+                
+                    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error Applying The Fix"
+                                                                    message:@"Cannot apply the fix. Something went wrong. Please contact @FCE365 for support."
+                                                                   delegate:self
+                                                          cancelButtonTitle:@"Umm, okay."
+                                                          otherButtonTitles:nil];
+                    [alert show];
+
+            }
+            else if (fileExists == NO){
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@""
+                                                                message:@"Fix successfully applied! Rebooting the device, please re-jailbreak after the reboot. ~GeoSn0w"
+                                                               delegate:self
+                                                      cancelButtonTitle:nil
+                                                      otherButtonTitles:nil];
+                [alert show];
+                
+                rebootqueue(1.0, ^
+                {
+                    system("reboot");
+                });            }
+        }
+        else if (fileExists == NO){
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error Applying The Fix"
+                                                            message:@"Cannot apply the fix. Something went wrong. Please contact @FCE365 for support. File not found."
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Umm, okay."
+                                                  otherButtonTitles:nil];
+            [alert show];
+
+        }
+        }
+        else if(isJailbroken() == NO){
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hold on!"
+                                                            message:@"Before using this fix, try to Jailbreak!"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"Umm, okay."
+                                                  otherButtonTitles:nil];
+            [alert show];
+
+        }
+
+    }
+ */
+    typedef void (^WaitCompletionBlock)();
+    void rebootqueue(NSTimeInterval duration, WaitCompletionBlock completion)
+    {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, duration * NSEC_PER_SEC),
+                   dispatch_get_main_queue(), ^
+                   { completion(); });
+    }
     - (IBAction)yolo:(UIButton*)sender
     {
-        //Beginning GeoSn0w's code
-        [sender setTitle:@"Sploiting..." forState:UIControlStateNormal]; //Shit, not enough time in-between the crash and the UI changes...
-        //End of GeoSn0w's Code
-        /*
-         
-         we out here!
-         
-         */
-        
         mach_port_t vch = 0;
         
         mach_voucher_attr_recipe_data_t *data = malloc(sizeof(mach_voucher_attr_recipe_data_t) + 0x10);
@@ -422,5 +440,41 @@
         // Dispose of any resources that can be recreated. Or something...
     }
     
+- (IBAction)unwindToThisViewController:(UIStoryboardSegue *)unwindSegue
+{
+}
+BOOL isJailbroken()
+{
+    //We're detecting if the device is Jailbroken, eitherway, the app fails.
     
+    FILE *f = NULL ;
+    if ((f = fopen("/bin/bash", "r")) ||
+        (f = fopen("/Applications/Cydia.app", "r")) ||
+        (f = fopen("/Library/MobileSubstrate/MobileSubstrate.dylib", "r")) ||
+        (f = fopen("/usr/sbin/sshd", "r")) ||
+        (f = fopen("/etc/apt", "r")))  {
+        fclose(f);
+        return YES;
+    }
+    fclose(f);
+    
+    NSError *error;
+    NSString *blimey = @"GeoSn0w will hear about your reverse engineering attempts ;)";
+    [blimey writeToFile:@"/private/smallensk.txt" atomically:YES encoding:NSUTF8StringEncoding error:&error];
+    [[NSFileManager defaultManager] removeItemAtPath:@"/private/smallensk.txt" error:nil];
+    if(error == nil)
+    {
+        return YES;
+    }
+    
+    return NO;
+}
+
+- (void)dealloc {
+    
+    [_fixespop release];
+    [_fixcydia release];
+    [_certiftime release];
+    [super dealloc];
+}
     @end
