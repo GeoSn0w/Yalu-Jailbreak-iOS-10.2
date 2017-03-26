@@ -8,15 +8,17 @@ I've decided to make this as Luca added support for iPhone 6 (7,2) on the projec
 <img src="https://cloud.githubusercontent.com/assets/15067741/23566482/b8f572e6-005a-11e7-832e-e1d6f4e00306.PNG" width="250" height= "450">
 
 Changes:
+* Screenshots are now outaded, will fix them.
 * Dark User Interface
 * Shows how many days out of the 7 Apple gives you have passed, brings a warning to resign it on day 6.
 * iOS Version Detection
+* Fixed a bug in the certification timing.
 * IPA Support (Reflects Yalu Beta 7)
 * This is a Beta Jailbreak, use at your own risk!
 * Supports ALL 64-Bit Devices (from iPhone 5S to iPhone 6S Plus) 
-* iPhone 7 is only supported up to 10.1.1 (If on 10.2, don't update to 10.2.1!) on Beta 3
+* iPhone 7 is only supported up to 10.1.1 (If on 10.2, don't update to 10.2.1!) on Mach_Portal + Yalu Beta 3
 
-* [!] The SHA SUM OF THE IPA: ed2560dadd4c4b7b47e6bd989e3567029099c4f9 (Not required to be verified, but highly recommended)
+* [!] The SHA SUM OF THE IPA: eae9c3ec5528273d5b9978c102f70dbd923d308a (Not required to be verified, but highly recommended)
 * [!] Rename yalu102.xcodeproj.zip to yalu102.xcodeproj if you want to use the source code!
 
 
