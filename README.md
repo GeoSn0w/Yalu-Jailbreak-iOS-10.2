@@ -5,6 +5,7 @@ I've decided to make this as Luca added support for iPhone 6 (7,2) on the projec
 
 Changes in Beta 9:
 * Fixed SSH issue (Connection Refused)
+* SHA SUM of this IPA: 853479685325c27daa5d44e2a27802bc5ec37572
 
 Changes In Beta 8:
 * Screenshots are now outaded, will fix them.
