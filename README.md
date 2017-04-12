@@ -3,11 +3,10 @@ This is GeoSn0w (F.C.E. 365 TV)'s Yalu Jailbreak fork.
 My own fork of Yalu Jailbreak for iOS 10.0 to 10.2 by qwertyoruiopz with support for iPhone 6/ 5S and iPod Touch 6, Dark UI and certification status.
 I've decided to make this as Luca added support for iPhone 6 (7,2) on the project, but not on the compiled IPA, so while I was at it, I also decided to play a bit with the project and I added some extra features.
 
-<img src="https://cloud.githubusercontent.com/assets/15067741/23566184/85b53b60-0059-11e7-85db-4e3938a1bad7.PNG" width="250" height= "450">
-<img src="https://cloud.githubusercontent.com/assets/15067741/23566186/869151cc-0059-11e7-9cf1-93e7c4f068f2.PNG" width="250" height= "450">
-<img src="https://cloud.githubusercontent.com/assets/15067741/23566482/b8f572e6-005a-11e7-832e-e1d6f4e00306.PNG" width="250" height= "450">
+Changes in Beta 9:
+* Fixed SSH issue (Connection Refused)
 
-Changes:
+Changes In Beta 8:
 * Screenshots are now outaded, will fix them.
 * Dark User Interface
 * Shows how many days out of the 7 Apple gives you have passed, brings a warning to resign it on day 6.
@@ -31,4 +30,6 @@ Check out the original project: https://github.com/kpwn/yalu102 for updates.
 * My Website: https://fce365.info
 * SubReddit: https://reddit.com/r/idevicecentral/
 
-
+<img src="https://cloud.githubusercontent.com/assets/15067741/23566184/85b53b60-0059-11e7-85db-4e3938a1bad7.PNG" width="250" height= "450">
+<img src="https://cloud.githubusercontent.com/assets/15067741/23566186/869151cc-0059-11e7-9cf1-93e7c4f068f2.PNG" width="250" height= "450">
+<img src="https://cloud.githubusercontent.com/assets/15067741/23566482/b8f572e6-005a-11e7-832e-e1d6f4e00306.PNG" width="250" height= "450">
