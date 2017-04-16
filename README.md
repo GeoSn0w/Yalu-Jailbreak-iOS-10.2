@@ -3,6 +3,13 @@ This is GeoSn0w (F.C.E. 365 TV)'s Yalu Jailbreak fork.
 My own fork of Yalu Jailbreak for iOS 10.0 to 10.2 by qwertyoruiopz with support for iPhone 6/ 5S and iPod Touch 6, Dark UI and certification status.
 I've decided to make this as Luca added support for iPhone 6 (7,2) on the project, but not on the compiled IPA, so while I was at it, I also decided to play a bit with the project and I added some extra features.
 
+Changes in Beta 10:
+* Completely new interface
+* Much more cleaner
+* Improved Stability
+* Added Details page
+* SHA SUM of this IPA: e0acf26411f326fa884b14b59c6c0d291012157f
+
 Changes in Beta 9:
 * Fixed SSH issue (Connection Refused)
 * SHA SUM of this IPA: 853479685325c27daa5d44e2a27802bc5ec37572
