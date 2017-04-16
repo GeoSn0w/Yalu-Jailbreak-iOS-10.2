@@ -1,10 +1,11 @@
 This is the IPA of my Yalu Jailbreak Fork (Yalu Dark).
 
-* Beta 9
-* SSH Connection via USB now Fixed
+* Beta 10
+* Improved stability
+* Completely new User Interface
 * IPA can be installed with Cydia Impactor (Windows, OS X, Linux): http://www.cydiaimpactor.com/
-* Beta 9 is not mirroring an update from Luca Todesco.
-* IPA's HASH: 853479685325c27daa5d44e2a27802bc5ec37572
+* Beta 10 is not mirroring an update from Luca Todesco.
+* IPA's HASH: e0acf26411f326fa884b14b59c6c0d291012157f
 
 Not required to check the SHA-1 hash, but highly recommended to prevent downloading corrupted, tampered files. ONLY download my Yalu Dark IPAs from THIS Git! I never host them anywhere else.
 
