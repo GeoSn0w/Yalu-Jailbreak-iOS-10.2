@@ -1,5 +1,5 @@
 # Yalu-Jailbreak-iOS-10.2
-This is GeoSn0w (F.C.E. 365 TV)'s Yalu Jailbreak fork.
+This is GeoSn0w (F.C.E. 365 TV - iDevice Central)'s Yalu Jailbreak fork.
 My own fork of Yalu Jailbreak for iOS 10.0 to 10.2 by qwertyoruiopz with support for iPhone 6/ 5S and iPod Touch 6, Dark UI and certification status.
 I've decided to make this as Luca added support for iPhone 6 (7,2) on the project, but not on the compiled IPA, so while I was at it, I also decided to play a bit with the project and I added some extra features.
 
@@ -31,6 +31,7 @@ Changes in Beta 10:
 | iPod Touch (6G)  | iOS 10.0.0 -> iOS 10.2 |
 
 [!] For iPhone 7 you must use mach_portal + yalu b3 available on yalu.qwertoruiop.com
+
 [!] Rename yalu102.xcodeproj.zip to yalu102.xcodeproj if you want to use the source code!
 
 
@@ -42,5 +43,3 @@ Check out the original project: https://github.com/kpwn/yalu102 for updates.
 * My Twitter: https://twitter.com/FCE365
 * My Website: https://fce365.info
 * SubReddit: https://reddit.com/r/idevicecentral/
-
-
