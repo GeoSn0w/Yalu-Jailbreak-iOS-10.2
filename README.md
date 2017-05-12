@@ -1,16 +1,14 @@
 # Yalu-Jailbreak-iOS-10.2
 This is GeoSn0w (F.C.E. 365 TV - iDevice Central)'s Yalu Jailbreak fork.
-My own fork of Yalu Jailbreak for iOS 10.0 to 10.2 by qwertyoruiopz with support for iPhone 6/ 5S and iPod Touch 6, Dark UI and certification status.
-I've decided to make this as Luca added support for iPhone 6 (7,2) on the project, but not on the compiled IPA, so while I was at it, I also decided to play a bit with the project and I added some extra features.
+My own fork of Yalu Jailbreak for iOS 10.0 to 10.2 by qwertyoruiopz with support for iPhone 6/ 5S and iPod Touch 6, Reinvented UI and certification status. This complies with the fixes pushed for HDMI Adapter on the GitHub code that are not available in yalu102 official IPA.
 
 <img src="https://cloud.githubusercontent.com/assets/15067741/25438793/2be723ae-2aa3-11e7-800a-1c38ce85a92c.jpg" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/25438826/430881ae-2aa3-11e7-8e84-ed61c619d414.jpg" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/25438997/d3d0fc8e-2aa3-11e7-9893-3c36e404bd4f.PNG" width="250" height= "450">
 
-Changes in Beta 10:
-* Completely new interface
-* Much more cleaner
+Changes in Beta 11:
+* Fixed HDMI Lightning Adapter Issues
 * Improved Stability
 * Added Details page
-* SHA SUM of this IPA: e0acf26411f326fa884b14b59c6c0d291012157f
+* SHA SUM of this IPA: 4cb9bafb0b63191f4533033ae82c513aa9c9194f
 * Shows how many days out of the 7 Apple gives you have passed, brings a warning to resign it on day 6.
 * This is a Beta Jailbreak, use at your own risk!
 
