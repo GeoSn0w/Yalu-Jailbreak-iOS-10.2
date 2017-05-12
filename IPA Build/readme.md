@@ -1,11 +1,12 @@
 This is the IPA of my Yalu Jailbreak Fork (Yalu Dark).
 
-* Beta 10
+* Beta 11
+* Fixed HDMI Lightning Adapter Issues.
 * Improved stability
 * Completely new User Interface
 * IPA can be installed with Cydia Impactor (Windows, OS X, Linux): http://www.cydiaimpactor.com/
-* Beta 10 is not mirroring an update from Luca Todesco.
-* IPA's HASH: e0acf26411f326fa884b14b59c6c0d291012157f
+* Beta 11 is not mirroring an update from Luca Todesco but uses updated code from his GitHub. 
+* IPA's HASH: 4cb9bafb0b63191f4533033ae82c513aa9c9194f
 
 Not required to check the SHA-1 hash, but highly recommended to prevent downloading corrupted, tampered files. ONLY download my Yalu Dark IPAs from THIS Git! I never host them anywhere else.
 
