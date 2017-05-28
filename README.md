@@ -1,10 +1,17 @@
 # Yalu-Jailbreak-iOS-10.2
-This is GeoSn0w (F.C.E. 365 TV - iDevice Central)'s Yalu Jailbreak fork.
-My own fork of Yalu Jailbreak for iOS 10.0 to 10.2 by qwertyoruiopz with support for iPhone 6/ 5S and iPod Touch 6, Reinvented UI and certification status. This complies with the fixes pushed for HDMI Adapter on the GitHub code that are not available in yalu102 official IPA.
+This is GeoSn0w (F.C.E. 365 TV - iDevice Central)'s Yalu Jailbreak fork for iOS 10.0 to 10.2 by qwertyoruiopz with reinvented UI, certification status, and Mobile Substrate Disable / Enable toggle. This complies with the fixes pushed for HDMI Adapter on the GitHub code that are not available in yalu102 official IPA.
 
 <img src="https://cloud.githubusercontent.com/assets/15067741/25438793/2be723ae-2aa3-11e7-800a-1c38ce85a92c.jpg" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/25438826/430881ae-2aa3-11e7-8e84-ed61c619d414.jpg" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/25438997/d3d0fc8e-2aa3-11e7-9893-3c36e404bd4f.PNG" width="250" height= "450">
 
-Changes in Beta 11:
+Changes in Beta 12:
+* Now you can chose to Enable / Disable Mobile Substrate prior to the Jailbreak
+* Improved Stability <b>(OF THE GUI NOT THE JAILBREAK ITSELF!)</b>
+* New Settings section 
+* SHA SUM of this IPA: aa7e6698f3eb95579f7026c60dc1953d43873a1a
+* Beta 12 doesn't reflect new changes in yalu102 original project.
+* This is a Beta Jailbreak, use at your own risk!
+
+Changes in Beta 11 [PREVIOUS VERSION]:
 * Fixed HDMI Lightning Adapter Issues
 * Improved Stability <b>(OF THE GUI NOT THE JAILBREAK ITSELF!)</b>
 * Added Details page
@@ -30,7 +37,7 @@ Changes in Beta 11:
 
 [!] For iPhone 7 you must use mach_portal + yalu b3 available on yalu.qwertoruiop.com
 
-[!] Rename yalu102.xcodeproj.zip to yalu102.xcodeproj if you want to use the source code!
+[!] You can now download the entire zipped project for Xcode, or download them one by one.
 
 
 Feel free to play with project as you want. Luca Todesco licensed it under WTFPL (Do What The Fuck You Want To Public License)
