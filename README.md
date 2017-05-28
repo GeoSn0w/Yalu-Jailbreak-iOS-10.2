@@ -6,7 +6,7 @@ My own fork of Yalu Jailbreak for iOS 10.0 to 10.2 by qwertyoruiopz with support
 
 Changes in Beta 11:
 * Fixed HDMI Lightning Adapter Issues
-* Improved Stability
+* Improved Stability <b>(OF THE GUI NOT THE JAILBREAK ITSELF!)</b>
 * Added Details page
 * SHA SUM of this IPA: 4cb9bafb0b63191f4533033ae82c513aa9c9194f
 * Shows how many days out of the 7 Apple gives you have passed, brings a warning to resign it on day 6.
