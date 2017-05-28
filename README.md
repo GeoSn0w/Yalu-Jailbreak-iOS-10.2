@@ -4,7 +4,7 @@ This is GeoSn0w (@fce365)'s Yalu Jailbreak fork for iOS 10.0 to 10.2 by qwertyor
 <img src="https://cloud.githubusercontent.com/assets/15067741/26529677/39f9d48a-43cd-11e7-9e89-c1018be4267c.PNG" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/25438826/430881ae-2aa3-11e7-8e84-ed61c619d414.jpg" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/26529679/3b0016dc-43cd-11e7-80a4-5560102754a1.PNG" width="250" height= "450">
 
 Changes in Beta 12:
-* Now you can chose to Enable / Disable Mobile Substrate prior to the Jailbreak
+* Now you can choose to Enable / Disable Mobile Substrate prior to the Jailbreak
 * Improved Stability <b>(OF THE GUI NOT THE JAILBREAK ITSELF!)</b>
 * New Settings section 
 * SHA SUM of this IPA: aa7e6698f3eb95579f7026c60dc1953d43873a1a
