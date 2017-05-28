@@ -1,7 +1,7 @@
 # Yalu-Jailbreak-iOS-10.2
 This is GeoSn0w (F.C.E. 365 TV - iDevice Central)'s Yalu Jailbreak fork for iOS 10.0 to 10.2 by qwertyoruiopz with reinvented UI, certification status, and Mobile Substrate Disable / Enable toggle. This complies with the fixes pushed for HDMI Adapter on the GitHub code that are not available in yalu102 official IPA.
 
-<img src="https://cloud.githubusercontent.com/assets/15067741/25438793/2be723ae-2aa3-11e7-800a-1c38ce85a92c.jpg" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/25438826/430881ae-2aa3-11e7-8e84-ed61c619d414.jpg" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/25438997/d3d0fc8e-2aa3-11e7-9893-3c36e404bd4f.PNG" width="250" height= "450">
+<center><img src="https://cloud.githubusercontent.com/assets/15067741/26529677/39f9d48a-43cd-11e7-9e89-c1018be4267c.PNG" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/25438826/430881ae-2aa3-11e7-8e84-ed61c619d414.jpg" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/26529679/3b0016dc-43cd-11e7-80a4-5560102754a1.PNG" width="250" height= "450"></center>
 
 Changes in Beta 12:
 * Now you can chose to Enable / Disable Mobile Substrate prior to the Jailbreak
