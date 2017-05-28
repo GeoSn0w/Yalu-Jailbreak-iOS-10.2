@@ -17,6 +17,9 @@
 @property (retain, nonatomic) IBOutlet UIButton *fixcydia;
 @property (retain, nonatomic) IBOutlet UILabel *iOSVer;
 @property (retain, nonatomic) IBOutlet UILabel *certiftime;
+@property (retain, nonatomic) IBOutlet UIButton *saveset;
+@property (retain, nonatomic) IBOutlet UIButton *nosubstrate;
+@property (retain, nonatomic) IBOutlet UISwitch *substrateswitch;
 @property (retain, nonatomic) IBOutlet UIButton *fixespop;
 @end
 
