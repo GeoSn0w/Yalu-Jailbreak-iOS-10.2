@@ -151,7 +151,9 @@ struct not_essers_ipc_object {
 char dt[128];
 - (IBAction)yolo:(UIButton*)sender
 {
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+    [dope setEnabled:NO];
+    [dope setTitle:@"Jailbreaking..." forState:UIControlStateDisabled];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.2 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
     /*
      
      we out here!
