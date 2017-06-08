@@ -10,16 +10,8 @@ Changes in Beta 13:
 * Improved Stability of the interface <b>(OF THE GUI NOT THE JAILBREAK ITSELF!)</b>
 * New Settings section 
 * Fixed landscape orientation issues.
-* SHA SUM of this IPA: 
+* SHA SUM of this IPA: <b>25795d435e023a9ab6da05ddc5067fccf86e95ec</b>
 * Beta 13 doesn't reflect new changes in yalu102 original project.
-* This is a Beta Jailbreak, use at your own risk!
-
-Changes in Beta 11 [PREVIOUS VERSION]:
-* Fixed HDMI Lightning Adapter Issues
-* Improved Stability <b>(OF THE GUI NOT THE JAILBREAK ITSELF!)</b>
-* Added Details page
-* SHA SUM of this IPA: 25795d435e023a9ab6da05ddc5067fccf86e95ec
-* Shows how many days out of the 7 Apple gives you have passed, brings a warning to resign it on day 6.
 * This is a Beta Jailbreak, use at your own risk!
 
 ## Supported Devices and iOS versions
