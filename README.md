@@ -3,19 +3,22 @@ This is GeoSn0w (@fce365)'s Yalu Jailbreak fork for iOS 10.0 to 10.2 by qwertyor
 
 <img src="https://cloud.githubusercontent.com/assets/15067741/26529677/39f9d48a-43cd-11e7-9e89-c1018be4267c.PNG" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/25438826/430881ae-2aa3-11e7-8e84-ed61c619d414.jpg" width="250" height= "450"> <img src="https://cloud.githubusercontent.com/assets/15067741/26529679/3b0016dc-43cd-11e7-80a4-5560102754a1.PNG" width="250" height= "450">
 
-Changes in Beta 12:
+Changes in Beta 13:
+<B>Beta 13 comes as an improvement for Beta 12's interface so it shares the same features... only less interface bugs.</B>
+* Shows "Jailbreaking..." while the process goes. Minor improvement, but neat.
 * Now you can choose to Enable / Disable Mobile Substrate prior to the Jailbreak
-* Improved Stability <b>(OF THE GUI NOT THE JAILBREAK ITSELF!)</b>
+* Improved Stability of the interface <b>(OF THE GUI NOT THE JAILBREAK ITSELF!)</b>
 * New Settings section 
-* SHA SUM of this IPA: aa7e6698f3eb95579f7026c60dc1953d43873a1a
-* Beta 12 doesn't reflect new changes in yalu102 original project.
+* Fixed landscape orientation issues.
+* SHA SUM of this IPA: 
+* Beta 13 doesn't reflect new changes in yalu102 original project.
 * This is a Beta Jailbreak, use at your own risk!
 
 Changes in Beta 11 [PREVIOUS VERSION]:
 * Fixed HDMI Lightning Adapter Issues
 * Improved Stability <b>(OF THE GUI NOT THE JAILBREAK ITSELF!)</b>
 * Added Details page
-* SHA SUM of this IPA: 4cb9bafb0b63191f4533033ae82c513aa9c9194f
+* SHA SUM of this IPA: 25795d435e023a9ab6da05ddc5067fccf86e95ec
 * Shows how many days out of the 7 Apple gives you have passed, brings a warning to resign it on day 6.
 * This is a Beta Jailbreak, use at your own risk!
 
