@@ -1,4 +1,4 @@
-<b> For all 64Bit devices supported by yalu102, EXPECT iPhone 7 or 7 Plus! </b>
+<b> For all 64Bit devices supported by yalu102, EXCEPT iPhone 7 or 7 Plus! </b>
 
 *****************************************
 WARNING! This IPA contains a FIX for DPKG_LOCKED issue that might appear due to bad stashing or device resetting -
